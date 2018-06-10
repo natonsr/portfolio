@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Match match game</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		
+	</head>
+	<body>
+		<div class='wrapper'>
+			<div class='menu_wrapper'>
+				<ul class="menu clearfix" id='menu'>
+					<li class='menu_item'>
+						Shirt Cards
+						<ul class='unvisible'>
+							<li class='submenu_item active' data-shirt='1'><img src='img/shirts/shirt_1.png'></img></li>
+							<li class='submenu_item' data-shirt='2'><img src='img/shirts/shirt_2.png'></img></li>
+							<li class='submenu_item' data-shirt='3'><img src='img/shirts/shirt_3.png'></img></li>
+						</ul>
+					</li>
+					<li class='menu_item'>
+						Game Difficulty
+						<ul class='unvisible'>
+							<li class='submenu_item active' data-columns=5 data-rows=2>Low (5 x 2)</li>
+							<li class='submenu_item' data-columns=6 data-rows=3>Medium (6 x 3)</li>
+							<li class='submenu_item' data-columns=8 data-rows=3>Hight (8 x 3)</li>
+						</ul>
+					</li>
+				</ul>
+				<div class='menu_timer'>Time:<span id='timer'>0</span>seconds</div>
+				<button class='menu_item' id='new_game'>New Game</button>
+				
+			</div><!--menu_wrapper--->
+			
+			<div class='field_wrapper'>
+				<div class='page field' id='game_filed'>
+					
+				</div>
+				<div class='page start_page'>
+						<h2>How to play:</h2>
+						<p>This is a counter game where the object is to find pairs.</p>
+						<p>When the game begins, all pictures are hidden.</p>
+						<h2>To play:</h2>
+						<ol>
+							<li>Select two cards to try match the pictures.</li>
+							<li>If you match the pictures you can go again.</li>
+							<li>If they don`t match it is the computer turn them.</li>
+							<li>The player that finds all pairs wins!</li>
+							<li>Have fun!</li>
+						</ol>
+				</div>
+				<div class='page finish_page'>
+						<p>Congratulations!!</p>
+						<p>Your time was<span id='finish_time'></span>seconds</p>
+				</div>
+			</div>	
+		</div>	
+		
+	<script type="text/javascript" src="script/script.js"></script>	
+	</body>
+</html>
