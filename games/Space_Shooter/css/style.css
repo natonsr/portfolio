@@ -1,0 +1,156 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+html{
+	height:100%;	
+}
+body{
+	height:100%;
+}
+canvas{
+	background:transparent;
+	position:absolute;
+	left:0;
+	right:0;
+}
+button:hover{
+	cursor:pointer;
+}
+.wrapper{
+	width:100%;
+	height:100%;
+	position:relative;
+	display:flex;
+	flex-flow:column nowrap;
+	align-items:center;
+	justify-content:center;
+}
+.greeting{
+	display:flex;
+	flex-flow:column nowrap;
+	align-items:center;
+	justify-content:space-between;
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:2;
+	background-color:#000;
+	background:url('../img/greetingBg.png') center 70% no-repeat #000;
+}
+.greeting p{
+	width:76%;
+	margin:35px 12%;
+	color:#15f6ff;
+	font-size:80px;
+	font-family:Calibri;
+}
+.greeting button{
+	display:none;
+	width:170px;
+	height:70px;
+	margin:30px;
+	font-family:Calibri;
+	font-size:26px;
+	font-weight:bold;
+	color:#747d84;
+	border:2px #747d84 solid;
+	background:url('../img/rocket.png') center 90% no-repeat;
+	opacity:0;
+	transition:opacity linear 0.8s;
+}
+.loading{
+	margin:30px;
+	font-size:26px;
+	color:#747d84;
+	font-family:Calibri;
+	font-weight:bold;
+}
+.game{
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-flow:column nowrap;
+	position:absolute;
+	z-index:3;
+	background-color:white;
+	visibility:hidden;
+}
+.statusBar{
+	width:100%;
+	height:30px;
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:center;
+	align-items:center;
+}
+.statusBar div{
+	margin:0 30px;
+	font-family:Arial;
+	color:#414141;
+}
+.statusBar button{
+	width:150px;
+	height:80%;
+	margin:0 30px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000;
+}
+.statusBar span{
+	padding:0 5px;
+	font-weight:bold;
+	color:#000;
+}	
+.main{
+	width:100%;
+	display:flex;
+	flex-flow:row nowrap;
+	flex-grow:1;
+}
+.field{
+	position:relative;
+	flex-grow:1;
+}	
+.controlBar{
+	width:81px;
+	padding:5px;
+}
+.controlBar button{
+	width:75px;
+	height:60px;
+	margin:2px 0;	
+	padding:2px;
+	font-weight:bold;
+	color:#000;
+}	
+	
+.mainArea{
+	z-index:2;
+}
+
+.bgArea{
+	z-index:1;
+}
+
+.finish{
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:center;
+	align-items:center;
+	width:50%;
+	height:70%;
+	padding:10px;
+	position:absolute;
+	z-index:1;
+	background-color:rgba(0,0,0,0.7);
+	visibility:hidden;
+}
+.finish div{
+	display:none;
+	text-align:center;
+	color:#747d84;
+	font-family:Calibri;
+	font-size:80px;
+}
